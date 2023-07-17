@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+  --primary-color: #f1faff;
+  --text-dark: #030712;
+  --text-light: #6b7280;
+  --extra-light: #fbfbfb;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
 body{
 	font-family: 'Montserrat', sans-serif;
 }
@@ -41,4 +49,41 @@ body{
 	color: #6b7280;
 	text-decoration: none;
 	font-size: 0.9rem;
+}
+
+/*banner styles*/
+.bannerContainer{
+	background-color: var(--primary-color);
+}
+.bannerContainer>div{
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+.bannerContainer p{
+	font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+.bannerContainer h1{
+	font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+}
+.bannerContainer button{
+	background-color: var(--text-dark);
+    color: var(--white);
+}
+.bannerImgBlock{
+	position: relative;
+}
+.bannerImgBlock img{
+	max-width: 400px;
+    position: absolute;
+    bottom: -5rem;
 }
